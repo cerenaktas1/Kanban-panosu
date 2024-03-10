@@ -1,0 +1,102 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.board {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.column {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.column h2 {
+    margin-top: 0;
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+}
+.card {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.card:hover {
+    background-color: #c5dee8;
+}
+.card:active {
+    transform: scale(0.98);
+}
+.card.dragging {
+    opacity: 0.5;
+}
+
+.btn-add,
+.btn-clear {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-add {
+    background-color: rgb(0, 123, 255); /* Mavi renk */
+    color: #fff;
+}
+.btn-clear {
+    background-color: rgb(220, 53, 69); /* Kırmızı renk */
+    color: #fff;
+    margin-left: 10px;
+}
+.btn-add:hover,
+.btn-clear:hover {
+    background-color: rgba(0, 123, 255, 0.8); /* Hafif mavi ton */
+}
+
+.btn-add:active,
+.btn-clear:active {
+    transform: scale(0.98);
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:nth-child(1) {
+    background-color: rgb(65, 105, 225); /* Mavi renk */
+    color: #fff;
+}
+button:nth-child(2) {
+    background-color: rgb(220, 20, 60); /* Kırmızı renk */
+    color: #fff;
+    margin-left: 10px;
+}
+button:hover {
+    filter: brightness(1.2); /* Hover durumunda parlaklık artışı */
+}
+button:active {
+    transform: scale(0.98);
+}
+#cl{
+    background-color: crimson;
+    color: #fff;
+}
+h1{
+    text-align: center;
+}
